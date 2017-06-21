@@ -1,7 +1,16 @@
-# cocoaOpenGL
-a simple openGL demo for mac OS, 
+//
+//  GLHander.m
+//  testGL
+//
+//  Created by jimbo on 2017/6/19.
+//  Copyright © 2017年 naver. All rights reserved.
+//
+#include "GLHander.h"
 
+@implementation GLHander
 
+- (void)setupGLConfigWithView:(GLView *)glView {
+    
     NSOpenGLPixelFormatAttribute attr[] = {
         NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
         NSOpenGLPFAColorSize, 24,
@@ -18,4 +27,6 @@ a simple openGL demo for mac OS,
     
     [glView setOpenGLContext:context];
     [glView.openGLContext makeCurrentContext];
-    
+}
+
+@end

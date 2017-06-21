@@ -1,0 +1,3 @@
+testGL/include/* linguist-vendored
+*.OpenGLRender.h linguist-language=Objective-C++
+*.OpenGLRender.cpp linguist-language=Objective-C++
